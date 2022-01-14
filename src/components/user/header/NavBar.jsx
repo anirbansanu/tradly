@@ -4,11 +4,11 @@ export default class NavBar extends Component {
     render() {
         return (
                 <nav className="navbar navbar-dark bg-primary">
-                    <h3 className="navbar-brand font-weight-bold">Tradly</h3>
+                    <h5 className="navbar-brand display-1 font-weight-bold m-0 p-3">Tradly</h5>
                     
                     <div className="form-group col-md-2 p-2 m-0">
                         <select id="inputState" className="form-control">
-                            <option selected>Category</option>
+                            <option selected>State</option>
                             <option>...</option>
                         </select>
                     </div>    
