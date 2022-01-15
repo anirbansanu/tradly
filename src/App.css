@@ -37,3 +37,27 @@ body{
   color: rgb(80 80 80);
   text-decoration: none; 
 }
+
+
+.carousel-img-indicators{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+}
+.carousel-img-indicators li{
+ text-decoration: none; display: inline;
+}
+.carousel-img-indicators>li>img{
+  float: left;
+  width: 10%;
+  height: 10%;
+}
+.sell-btn{
+  
+}
+/* .carousel{
+  min-height: 350px;
+  vertical-align: middle;
+} */

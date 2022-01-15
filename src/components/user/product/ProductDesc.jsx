@@ -18,7 +18,7 @@ export default class ProductDesc extends Component {
     
     render() {
         return (
-            <div className="card shadow mb-4 border-side-danger">
+            <div className="card shadow mt-4 mb-4 border-side-danger">
                     <div className="card-body">
                         <div className='card-body d-flex justify-content-between p-0'>
                             <h5 className="card-title product-price">Description</h5>

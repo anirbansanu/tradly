@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchIcon from '@material-ui/icons/Search';
+import { Link } from 'react-router-dom';
 export default class NavBar extends Component {
     render() {
         return (
@@ -30,10 +31,10 @@ export default class NavBar extends Component {
                     </form>
                     <ul className="navbar-nav ml-md-auto d-inline-block ">
                         <li className="nav-item d-inline-block">
-                            <a href="\" className="nav-link p-1 " activeclassname="text-white" aria-current="page" to="/my-web" ><b>Log in</b></a>
+                            <Link className="btn btn-outline-light" activeclassname="text-white" aria-current="page" to="/login" ><b>Log in</b></Link>
                         </li>  
-                        <li className="nav-item d-inline-block">
-                            <a href="\" className="nav-link p-1" activeclassname="text-white" aria-current="page" to="/my-web" ><b>Log in</b></a>
+                        <li className="nav-item d-inline-block ml-2">
+                            <Link className="btn btn-outline-light" activeclassname="text-white" aria-current="page" to="/sell" ><b>SELL</b></Link>
                         </li> 
                     </ul>
                     

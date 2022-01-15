@@ -12,15 +12,17 @@ class ProductDetails extends Component {
         }
         console.log("Product Details");
     }
-    async getProductInfo(){
+    async getProductInfo(prevProps, nextProps){
         try{
-            const res = await fetch("http://localhost:8070/product/"+3);
+            const res = await fetch("http://localhost:8070/product/"+this.props.match.params.id);
             const actualData = await res.json();
             //console.log(actualData);
-            this.setState({
-                info:actualData,
-                loaded: true
-            });
+            if(prevProps !== this.props){
+                this.setState({
+                    info:actualData,
+                    loaded: true
+                });
+            }
             console.log(actualData);
     
         }
@@ -30,24 +32,32 @@ class ProductDetails extends Component {
         
     }
     componentDidMount(){
-        this.getProductInfo();
-        console.log("this is Props : ");
-        console.log(this.props);
+        this.getProductInfo();        
     }
     render() {
         return (
             this.state.loaded?
-            <div className='container-fluid p-2 p-lg-5'>
+            <>
+            <div className='container-fluid pl-2 pt-5 pl-lg-5 pr-2 pr-lg-5'>
                 <div className='row m-0'>
                     <div className='col-12 col-lg-6'>
                         <ProductCarousel/>
-                        <ProductDesc info={this.state.info[0]}/>
+                        {/* <ProductDesc info={this.state.info[0]}/> */}
                     </div>
                     <div className='col-12 col-lg-6 '>
                         <ProductInfoView info={this.state.info[0]}/>
                     </div>
                 </div>
-            </div>:"Loding..."
+            </div>
+            <div className='container-fluid pl-2 pl-lg-5 pr-2 pr-lg-5'>
+                <div className='row m-0'>
+                    <div className='col-12 col-lg-6'>
+                        <ProductDesc info={this.state.info[0]}/>
+                    </div>
+                </div>
+            </div>
+            </>
+            :"Loding..."
         )
     }
 }
