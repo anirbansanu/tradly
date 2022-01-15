@@ -17,16 +17,23 @@ body{
   padding: 5px;
   color: #3292ff;
 }
+.product-item{
+  text-decoration: none !important; 
+  
+}
 .product-price{
   font-weight: bold;
   font-size: xx-large;
   font-family: monospace;
+  text-decoration: none; 
 }
 .product-title{
   font-weight: bold;
   font-family: monospace;
   color: rgba(41, 41, 41, 0.5);
+  text-decoration: none; 
 }
 .product-desc{
   color: rgb(80 80 80);
+  text-decoration: none; 
 }

@@ -1,15 +1,30 @@
 import React, { Component } from 'react'
 
 export default class ProductDesc extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            info: this.props.info
+        }
+    }
+    componentDidUpdate(prevProps, nextProps) {
+        if(prevProps !== this.props){
+         console.log(nextProps);
+         this.setState({
+            info: nextProps.info,
+         });
+       }
+    }
+    
     render() {
         return (
-            <div class="card shadow mb-4 border-side-danger">
-                    <div class="card-body">
+            <div className="card shadow mb-4 border-side-danger">
+                    <div className="card-body">
                         <div className='card-body d-flex justify-content-between p-0'>
-                            <h5 class="card-title product-price">Description</h5>
+                            <h5 className="card-title product-price">Description</h5>
                         </div>
-                        <p class="card-text product-desc h6">With supporting text below as a</p>
-                        <p class="card-text product-desc h6">natural lead-in to additional content.</p>
+                        <p className="card-text product-desc h6">{this.state.info.description}</p>
+                        <p className="card-text product-desc h6">natural lead-in to additional content.</p>
                         
                     </div>
                 </div>

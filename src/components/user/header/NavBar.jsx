@@ -8,14 +8,14 @@ export default class NavBar extends Component {
                     
                     <div className="form-group col-md-2 p-2 m-0">
                         <select id="inputState" className="form-control">
-                            <option selected>State</option>
-                            <option>...</option>
+                            <option defaultValue={''}>State</option>
+                            <option value="">...</option>
                         </select>
                     </div>    
                     <div className="form-group col-md-2 p-2 m-0">
                         <select id="inputState" className="form-control">
-                            <option selected>City</option>
-                            <option>...</option>
+                            <option defaultValue={''}>City</option>
+                            <option value="">...</option>
                         </select>
                     </div>     
                     <form className='col-md-4'>

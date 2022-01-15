@@ -8,9 +8,9 @@ export default class Categories extends Component {
                     <div className="col-12 col-md-3">
                         <div className="form-group m-0">
                             <select id="inputState" className="form-control">
-                                <option selected>Category</option>
-                                <option>Car</option>
-                                <option>Bike</option>
+                                <option defaultValue={''}>Category</option>
+                                <option value="Car">Car</option>
+                                <option value="Bike">Bike</option>
                             </select>
                         </div>     
                     </div>
