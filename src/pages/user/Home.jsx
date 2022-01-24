@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Categories from '../../components/user/filter/Categories';
+import Filters from '../../components/user/product/Filters';
 import ProductList from '../../components/user/product/ProductList';
 
 export default class Home extends Component {
     render() {
         return (
-            <div className=''>
+            <div className='content-wrapper'>
                 
-                <Categories/>
+                <Filters/>
                 <ProductList/>
             </div>
         )

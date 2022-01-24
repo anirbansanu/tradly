@@ -46,9 +46,9 @@ export default class ProductList extends Component {
                                     <p className="card-text m-1 text-secondary">{item.name}</p>
                                     
                                 </div>
-                                <div className="card-body border-side-primary p-2 d-flex justify-content-between">
-                                    <span className='float-right m-1 text-secondary text-truncate'>{item.address}</span>
-                                    <span className='float-right m-1 text-secondary'>{item.date}</span>
+                                <div className="card-body border-side-primary p-2 d-flex">
+                                    <span className='m-1 text-secondary text-truncate'>{item.address}</span>
+                                    <span className='ml-auto m-1 text-secondary '>{item.date}</span>
                                 </div>
                             </div>  
                         </Link>            
