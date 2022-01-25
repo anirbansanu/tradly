@@ -46,7 +46,7 @@ export default class Header extends Component {
       {/* /. End Of Search Form */}
       <li className="nav-item ">
         <Link to="/sell" role="button" className="btn btn-block btn-outline-primary btn-sm bold mt-1">
-        <i class="far fa-hand-pointer mr-1"></i>SELL</Link>
+        <i className="far fa-hand-pointer mr-1"></i>SELL</Link>
       </li>
       {/* Messages Dropdown Menu */}
       <li className="nav-item dropdown">
@@ -128,7 +128,7 @@ export default class Header extends Component {
           </Link>
           <div className="dropdown-divider" />
           <Link to="/log_out" className="dropdown-item">
-            <i class="fas fa-sign-out-alt mr-2"/>Log Out
+            <i className="fas fa-sign-out-alt mr-2"/>Log Out
             <span className="float-right text-muted text-sm"></span>
           </Link>
           <div className="dropdown-divider" />
@@ -140,6 +140,7 @@ export default class Header extends Component {
           <i className="fas fa-expand-arrows-alt"></i>
         </Link>
       </li>
+      
       {/* <li className="nav-item">
         <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="/">
           <i className="fas fa-th-large" />

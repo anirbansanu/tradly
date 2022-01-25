@@ -9,9 +9,9 @@ import Header from './components/user/header/Header';
 import Home from './pages/user/Home';
 import ProductDetails from './pages/user/ProductDetails';
 import Sell from './pages/user/Sell';
-import Adds from './pages/user/Adds';
 import Menu from './components/user/sidebar/Menu';
 import Queries from './pages/user/Queries';
+import MyAdds from './pages/user/MyAdds';
 // import 'admin-lte/dist/css/adminlte.min.css';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
             <Route path="/home" component={Home}/> 
             <Route path="/product/:id" component={ProductDetails}/> 
             <Route path="/sell" component={Sell}/>
-            <Route path="/adds" component={Adds}/>
+            <Route path="/myadds" component={MyAdds}/>
             <Route path="/queries" component={Queries}/>
           </Switch>
       </div>

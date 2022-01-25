@@ -78,6 +78,15 @@ export default class Menu extends Component {
                       </Link>
                     </li>
                     <li className="nav-item">
+                      <Link to="/myadds" className="nav-link">
+                        <i className="nav-icon fas fa-th" />
+                        <p>
+                          My Adds
+                          <span className="right badge badge-danger">New</span>
+                        </p>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
                       <Link to="/queries" className="nav-link">
                         <i className="nav-icon fas fa-th" />
                         <p>
