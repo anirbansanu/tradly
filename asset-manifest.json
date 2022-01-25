@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tradly/static/css/main.a6fa8327.css",
-    "main.js": "/tradly/static/js/main.9532ec6b.js",
+    "main.css": "/tradly/static/css/main.ff36a5cf.css",
+    "main.js": "/tradly/static/js/main.3e840bf9.js",
     "static/js/787.8568e04b.chunk.js": "/tradly/static/js/787.8568e04b.chunk.js",
     "static/media/product.jpg": "/tradly/static/media/product.3200ac92908d43e6a697.jpg",
     "static/media/prod-1.jpg": "/tradly/static/media/prod-1.8d2f9267b415644a536b.jpg",
@@ -10,12 +10,12 @@
     "static/media/prod-4.jpg": "/tradly/static/media/prod-4.32caf1493f98a6a41734.jpg",
     "static/media/prod-3.jpg": "/tradly/static/media/prod-3.cfb81050b3915bf50ffd.jpg",
     "index.html": "/tradly/index.html",
-    "main.a6fa8327.css.map": "/tradly/static/css/main.a6fa8327.css.map",
-    "main.9532ec6b.js.map": "/tradly/static/js/main.9532ec6b.js.map",
+    "main.ff36a5cf.css.map": "/tradly/static/css/main.ff36a5cf.css.map",
+    "main.3e840bf9.js.map": "/tradly/static/js/main.3e840bf9.js.map",
     "787.8568e04b.chunk.js.map": "/tradly/static/js/787.8568e04b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6fa8327.css",
-    "static/js/main.9532ec6b.js"
+    "static/css/main.ff36a5cf.css",
+    "static/js/main.3e840bf9.js"
   ]
 }
