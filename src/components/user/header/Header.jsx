@@ -13,17 +13,17 @@ export default class Header extends Component {
         <a className="nav-link" data-widget="pushmenu" href="/"><i className="fas fa-bars" /></a>
       </li>
       <li className="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" className="nav-link">Home</a>
+        <Link to="/" className="nav-link">Home</Link>
       </li>
       <li className="nav-item d-none d-sm-inline-block">
-        <a href="/" className="nav-link">Contact</a>
+        <Link to="/contact" className="nav-link">Contact</Link>
       </li>
     </ul>
     
     {/* Right navbar links */}
     <ul className="navbar-nav ml-auto">
       {/* { Search form } */}
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a className="nav-link" data-widget="navbar-search" href="/" role="button">
           <i className="fas fa-search" />
         </a>
@@ -42,8 +42,12 @@ export default class Header extends Component {
             </div>
           </form>
         </div>
-      </li>
+      </li> */}
       {/* /. End Of Search Form */}
+      <li className="nav-item ">
+        <Link to="/sell" role="button" className="btn btn-block btn-outline-primary btn-sm bold mt-1">
+        <i class="far fa-hand-pointer mr-1"></i>SELL</Link>
+      </li>
       {/* Messages Dropdown Menu */}
       <li className="nav-item dropdown">
         <Link className="nav-link" data-toggle="dropdown" aria-expanded="false">
@@ -102,49 +106,19 @@ export default class Header extends Component {
           <a href="/" className="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li>
-      {/* Notifications Dropdown Menu */}
-      <li className="nav-item dropdown">
-        <a className="nav-link" data-toggle="dropdown" href="/">
-          <i className="far fa-bell" />
-          <span className="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span className="dropdown-item dropdown-header">15 Notifications</span>
-          <div className="dropdown-divider" />
-          <a href="/" className="dropdown-item">
-            <i className="fas fa-envelope mr-2" /> 4 new messages
-            <span className="float-right text-muted text-sm">3 mins</span>
-          </a>
-          <div className="dropdown-divider" />
-          <a href="/" className="dropdown-item">
-            <i className="fas fa-users mr-2" /> 8 friend requests
-            <span className="float-right text-muted text-sm">12 hours</span>
-          </a>
-          <div className="dropdown-divider" />
-          <a href="/" className="dropdown-item">
-            <i className="fas fa-file mr-2" /> 3 new reports
-            <span className="float-right text-muted text-sm">2 days</span>
-          </a>
-          <div className="dropdown-divider" />
-          <a href="/" className="dropdown-item dropdown-footer">See All Notifications</a>
-        </div>
-      </li>
+      
       {/* User Dropdown Menu */}
       <li className="nav-item dropdown">
-        {/* <a className="nav-link" data-toggle="dropdown" href="/">
-          <i className="far fa-bell" />
-          <span className="badge badge-warning navbar-badge">15</span>
-        </a> */}
+        
         <div className="user-panel d-flex" data-toggle="dropdown" >
           <div className="image">
             <img src={userPic} className="img-circle " alt="User Profile Pic"/>
           </div>
-          <div className="info">
+          {/* <div className="info">
             <Link className="d-block">Alexander Pierce</Link>
-          </div>
+          </div> */}
         </div>
-        
-        
+       
         <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span className="dropdown-item dropdown-header bg-gradient-primary bold">Profile</span>
           <div className="dropdown-divider" />
@@ -155,7 +129,7 @@ export default class Header extends Component {
           <div className="dropdown-divider" />
           <Link to="/log_out" className="dropdown-item">
             <i class="fas fa-sign-out-alt mr-2"/>Log Out
-            <span className="float-right text-muted text-sm">2 days</span>
+            <span className="float-right text-muted text-sm"></span>
           </Link>
           <div className="dropdown-divider" />
           <Link to="/terms" className="dropdown-item dropdown-footer">Terms and conditions</Link>

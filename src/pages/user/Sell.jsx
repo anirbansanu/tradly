@@ -25,7 +25,7 @@ export default class Sell extends Component {
                         <div className="col-12 col-md-6">
                             <ol className="breadcrumb float-sm-right">
                                 <li className="breadcrumb-item"><Link to="/home">Home</Link></li>
-                                <li className="breadcrumb-item active">Project Add</li>
+                                <li className="breadcrumb-item active">Product</li>
                             </ol>
                         </div>
                         </div>

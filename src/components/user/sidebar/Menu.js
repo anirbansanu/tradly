@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import logo from '../../../img/logo.png';
 // import userPic from '../../../img/user2-160x160.jpg';
 
@@ -58,15 +60,32 @@ export default class Menu extends Component {
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <a href="pages/widgets.html" className="nav-link">
+                      <Link to="/" className="nav-link">
                         <i className="nav-icon fas fa-th" />
                         <p>
-                          Widgets
+                          Home
                           <span className="right badge badge-danger">New</span>
                         </p>
-                      </a>
+                      </Link>
                     </li>
-                    
+                    <li className="nav-item">
+                      <Link to="/sell" className="nav-link">
+                        <i className="nav-icon fas fa-th" />
+                        <p>
+                          Sell
+                          <span className="right badge badge-danger">New</span>
+                        </p>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="/queries" className="nav-link">
+                        <i className="nav-icon fas fa-th" />
+                        <p>
+                          Queries
+                          <span className="right badge badge-danger">New</span>
+                        </p>
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
                 {/* /.sidebar-menu */}
