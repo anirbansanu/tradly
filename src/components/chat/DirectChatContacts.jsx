@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class DirectChatContacts extends Component {
   render() {
     return (
-        <div className="direct-chat-contacts">
+        <div className="direct-chat-contacts" style={{height:"inherit"}}>
             <ul className="contacts-list">
             <li>
                 <Link href="#">
