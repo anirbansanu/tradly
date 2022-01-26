@@ -12,6 +12,7 @@ import Sell from './pages/user/Sell';
 import Menu from './components/user/sidebar/Menu';
 import Queries from './pages/user/Queries';
 import MyAdds from './pages/user/MyAdds';
+import Dashboard from './pages/admin/Dashboard';
 // import 'admin-lte/dist/css/adminlte.min.css';
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
             <Route path="/sell" component={Sell}/>
             <Route path="/myadds" component={MyAdds}/>
             <Route path="/queries" component={Queries}/>
+            <Route exact path="/admin" component={Dashboard}/>
+            <Route path="/admin" component={Home}/> 
+            <Route path="/admin/:id" component={ProductDetails}/> 
           </Switch>
       </div>
       </div>

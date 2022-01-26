@@ -9,7 +9,7 @@ export default class Queries extends Component {
                 
         {/* <!-- U can Paste Here Content Header (Page header) --> */}
         <section className="content">
-          <ChatBox/>
+          <ChatBox title="Product Title" maximize={true} contacts={true}/>
         </section>
       </div>
     );

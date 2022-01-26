@@ -8,10 +8,10 @@ export default class Add extends Component {
     return (
         <Callout color="primary" className="p-0">
             <div className='row m-0'>
-                <div className='col-12 col-sm-2 bg-light-gray'>
-                    <center>
-                    <h6 className='p-2 pt-4 mt-sm-2 text-secondary bold'>{this.props.date?this.props.date:"date"}</h6>
-                    </center>
+                <div className='col-12 col-sm-2 bg-light-gray d-flex flex-row justify-content-center align-items-center ' >
+                    
+                    <font className='p-2 p-sm-0 text-secondary bold'>{this.props.date?this.props.date:"date"}</font>
+                    
                 </div>
                 
                 <div className='col-12 col-sm-5 p-2'>
