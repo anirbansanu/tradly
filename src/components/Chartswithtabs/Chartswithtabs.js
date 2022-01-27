@@ -3,29 +3,30 @@ import { Line,Doughnut } from 'react-chartjs-2';
 const salesChartData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
+      
+      {
+        label: 'Electronics',
+        fill: true,
+        backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        borderColor: 'rgba(210, 214, 222, 1)',
+        pointRadius: true,
+        pointColor: 'rgba(210, 214, 222, 1)',
+        pointStrokeColor: '#fff',
+        pointHighlightFill: '#fff',
+        pointHighlightStroke: 'rgba(220,220,220,1)',
+        data: [65, 59, 75, 81, 56, 55, 40]
+      },
       {
         label: 'Digital Goods',
         fill: true,
-        backgroundColor: 'rgba(60,141,188,0.5)',
-        borderColor: 'rgba(60,141,188,0.8)',
+        backgroundColor: 'rgba(60,141,188,0.8)',
+        borderColor: 'rgba(60,141,188,0.9)',
         pointRadius: true,
         pointColor: '#3b8bba',
         pointStrokeColor: 'rgba(60,141,188,1)',
         pointHighlightFill: '#fff',
         pointHighlightStroke: 'rgba(60,141,188,1)',
         data: [28, 38, 40, 19, 86, 27, 90]
-      },
-      {
-        label: 'Electronics',
-        fill: true,
-        backgroundColor: 'rgba(210, 214, 222, 0.5)',
-        borderColor: 'rgba(210, 214, 222, 1)',
-        pointRadius: true,
-        pointColor: 'rgba(210, 214, 222, 1)',
-        pointStrokeColor: '#c1c7d1',
-        pointHighlightFill: '#fff',
-        pointHighlightStroke: 'rgba(220,220,220,1)',
-        data: [65, 59, 75, 81, 56, 55, 40]
       }
     ]
   };
@@ -52,7 +53,7 @@ const salesChartData = {
     scales: {
       xAxes: [{
         gridLines: {
-          display: false
+          display: true
           
         }
       }],

@@ -31,7 +31,6 @@ function App() {
             <Route path="/myadds" component={MyAdds}/>
             <Route path="/queries" component={Queries}/>
             <Route exact path="/admin" component={Dashboard}/>
-            <Route path="/admin" component={Home}/> 
             <Route path="/admin/:id" component={ProductDetails}/> 
           </Switch>
       </div>

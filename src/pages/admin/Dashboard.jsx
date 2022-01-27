@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Chartswithtabs from '../../components/Chartswithtabs/Chartswithtabs';
+import ContentHeader from '../../components/ContentHeader';
 // import Directchat from "../../components/Directchat/Directchat";
 // import Todo from "../../components/Todo/Todo";
 import Map from "../../components/Map/Map";
@@ -12,21 +13,7 @@ export default class Dashboard extends Component {
     return (
         <div className="content-wrapper app-color">
         {/* Content Header (Page header) */}
-        <div className="content-header">
-          <div className="container-fluid">
-            <div className="row m-0 mb-2">
-              <div className="col-sm-6">
-                <h1 className="m-0 text-dark">Dashboard</h1>
-              </div>{/* /.col */}
-              <div className="col-sm-6">
-                <ol className="breadcrumb float-sm-right">
-                  <li className="breadcrumb-item"><a href="/">Home</a></li>
-                  <li className="breadcrumb-item active">Dashboard v1</li>
-                </ol>
-              </div>{/* /.col */}
-            </div>{/* /.row */}
-          </div>{/* /.container-fluid */}
-        </div>
+        <ContentHeader title="Dashboard" url={["Home","Dashboard"]}/>
         {/* /.content-header */}
         {/* Main content */}
         <section className="content">
@@ -37,7 +24,7 @@ export default class Dashboard extends Component {
                 {/* small box */}
                   <SmallBox
                       count="150"
-                      title="New Orders"
+                      title="Users"
                       type="info"
                       icon="ion-android-people"
                       navigateTo="/"
@@ -50,9 +37,9 @@ export default class Dashboard extends Component {
                 <SmallBox
                       count="53"
                       sup="%"
-                      title="Bounce Rate"
+                      title="Day Adds"
                       type="success"
-                      icon="ion-stats-bars"
+                      iconCompo={<i class="fas fa-box-open"></i>}
                       navigateTo="/"
                       info="More Info"
                   />
@@ -63,9 +50,9 @@ export default class Dashboard extends Component {
                 
                 <SmallBox
                       count="45"
-                      title="User Registrations"
+                      title="Categories"
                       type="warning"
-                      icon="ion-person-add"
+                      iconCompo={<i class="fas fa-th-list"></i>}
                       navigateTo="/"
                       info="More Info"
                   />
@@ -75,9 +62,9 @@ export default class Dashboard extends Component {
                 {/* small box */}
                 <SmallBox
                       count="66"
-                      title="Unique Visitors"
+                      title="Reports"
                       type="danger"
-                      icon="ion-pie-graph"
+                      iconCompo={<i class="fas fa-bug"></i>}
                       navigateTo="/"
                       info="More Info"
                   />

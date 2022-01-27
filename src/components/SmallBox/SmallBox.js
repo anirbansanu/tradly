@@ -38,7 +38,7 @@ export default class SmallBox extends Component {
                  <p>{this.props.title || "Title"}</p>
              </div>
              <div className="icon">
-                 <i className={`ion ${this.props.icon || 'ion-bag'}`} />
+                 {this.props.iconCompo || <i className={`ion ${this.props.icon || 'ion-bag'}`} />}
              </div>
              <a to={this.props.navigateTo || "/"} href={this.props.navigateTo || "/"} className="small-box-footer">
                  <span className="mr-2">{this.props.info || "More Info"}</span>
