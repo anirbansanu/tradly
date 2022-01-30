@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Filters from '../../components/user/product/Filters';
+import Filters from '../../components/filter/Filters';
 import ProductList from '../../components/user/product/ProductList';
 
 export default class Home extends Component {

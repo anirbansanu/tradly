@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import ProductDetailsCompo from '../../components/user/product/ProductDetailsCompo';
+import user from '../../services/userServices';
 
 class ProductDetails extends Component {
     constructor(props){
@@ -13,8 +13,8 @@ class ProductDetails extends Component {
     }
     async getProductInfo(prevProps, nextProps){
         try{
-            const res = await fetch("http://localhost:8070/product/"+this.props.match.params.id);
-            const actualData = await res.json();
+            const res = await user.product(this.props.match.params.id);
+            const actualData = await res.data;
             //console.log(actualData);
             if(prevProps !== this.props){
                 this.setState({

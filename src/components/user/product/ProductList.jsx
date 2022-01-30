@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../../product.jpg';
+import user from '../../../services/userServices';
 import {Link} from 'react-router-dom';
 export default class ProductList extends Component {
     constructor(props){
@@ -11,9 +12,9 @@ export default class ProductList extends Component {
     }
     async getProductList(){
         try{
-            const res = await fetch("http://localhost:8070/product/all");
-            const actualData = await res.json();
-            //console.log(actualData);
+            const res = await user.products();
+            // console.log(res.data);
+            const actualData = await res.data;
             this.setState({
                 list:actualData,
                 loaded: true

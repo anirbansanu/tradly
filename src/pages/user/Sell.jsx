@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Card from '../../components/Card';
 import FileUpload from '../../components/FileUpload';
 import Select from 'react-select';
-
+import ContentHeader from '../../components/ContentHeader';
 const options = [
     { value: 'Car', label: 'Car' },
     { value: 'Bike', label: 'Bike' },
@@ -13,25 +12,11 @@ const options = [
 export default class Sell extends Component {
     render() {
         return (
-            <div className='content-wrapper'>
-                <div className="content-wrapper m-0 w-100 p-4">
+           
+                <div className="content-wrapper ">
                     {/* <!-- Content Header (Page header) --> */}
-                    <section className="content-header">
-                    <div className="container-fluid">
-                        <div className="row mb-2">
-                        <div className="col-12 col-md-6">
-                            <h1>POST YOUR AD</h1>
-                        </div>
-                        <div className="col-12 col-md-6">
-                            <ol className="breadcrumb float-sm-right">
-                                <li className="breadcrumb-item"><Link to="/home">Home</Link></li>
-                                <li className="breadcrumb-item active">Product</li>
-                            </ol>
-                        </div>
-                        </div>
-                    </div>
-                    {/* <!-- /.container-fluid --> */}
-                    </section>
+                    
+                    <ContentHeader title="Post Your Add" url={["Home","Product"]}/>
 
                     {/* <!-- Main content --> */}
                     <section className="content">
@@ -87,7 +72,7 @@ export default class Sell extends Component {
                     </section>
                     {/* <!-- /.content --> */}
                 </div>
-            </div>
+        
         )
     }
 }

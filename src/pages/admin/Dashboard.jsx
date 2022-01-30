@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Chartswithtabs from '../../components/Chartswithtabs/Chartswithtabs';
 import ContentHeader from '../../components/ContentHeader';
 // import Directchat from "../../components/Directchat/Directchat";
-// import Todo from "../../components/Todo/Todo";
+import Todo from "../../components/Todo/Todo";
 import Map from "../../components/Map/Map";
 // import Calendar from "../../components/Calendar/Calendar";
 import Salesgraph from "../../components/Salesgraph/Salesgraph";
@@ -84,18 +84,18 @@ export default class Dashboard extends Component {
                 {/* DIRECT CHAT */}
                   {/* <Directchat/> */}
                 {/*/.direct-chat */}
-
-                {/* TO DO List */}
-                  {/* <Todo/> */}
-                {/* /.TO DO List */}
+                {/* Map card */}
+                  <Map/>
+                {/* /.Map */}
+                
               </section>
               {/* /.Left col */}
               {/* right col (We are only adding the ID to make the widgets sortable)*/}
               <section className="col-lg-5 connectedSortable">
-                {/* Map card */}
-                  <Map/>
-                {/* /.Map */}
-
+                
+                {/* TO DO List */}
+                  <Todo/>
+                {/* /.TO DO List */}
                 {/* solid sales graph */}
                   <Salesgraph/>
                 {/* /.sales graph */}
