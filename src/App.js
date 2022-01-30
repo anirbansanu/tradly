@@ -13,6 +13,7 @@ import Menu from './components/user/sidebar/Menu';
 import Queries from './pages/user/Queries';
 import MyAdds from './pages/user/MyAdds';
 import Dashboard from './pages/admin/Dashboard';
+import Login from './pages/user/Login';
 // import 'admin-lte/dist/css/adminlte.min.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/home" component={Home}/> 
+            <Route exact path="/login" component={Login}/>
             <Route path="/product/:id" component={ProductDetails}/> 
             <Route path="/sell" component={Sell}/>
             <Route path="/myadds" component={MyAdds}/>
