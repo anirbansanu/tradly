@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Select from 'react-select'
+import React, { Component } from 'react';
+import Select from 'react-select';
 
 const options = [
   { value: 'Car', label: 'Car' },
@@ -9,8 +9,6 @@ const options = [
 
 
 export default class Filters extends Component {
-    
-
     render() {
         return (
             <div className='container-fluid b-edge-shadow p-0' >
@@ -33,8 +31,6 @@ export default class Filters extends Component {
                     <div className='col-12 col-md-6 px-md-5 pb-2'>
                         <Select options={options} />
                     </div>
-                    
-                
                 </div>
             </div>
         )

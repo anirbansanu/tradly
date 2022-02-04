@@ -35,8 +35,14 @@ export default class ProductDetailsCompo extends Component {
                                     <Callout color="primary">
                                         <h2 className="my-3">₹ {this.props.info.price}</h2>
                                         <hr />
-                                        <h5>{this.props.info.name}</h5>
+                                        <h5 className='text-truncate'>{this.props.info.name}</h5>
                                         <div className='row m-0'>
+                                            <div className="col-12 pl-0">
+                                                <div className='mb-3 mt-3 text-truncate'>
+                                                    <i className='fas fa-map-marker-alt mr-2 f-large'></i>
+                                                    <span className='text-truncate'>{this.props.info.city+","+this.props.info.district+","+this.props.info.state}</span>
+                                                </div>
+                                            </div>
                                             <div className="col-12 col-sm-6 pl-0">
                                                 <InfoBox title="Views" text={this.props.info.views} icon="far fa-eye" iconBoxColor="info"/>
                                             </div>

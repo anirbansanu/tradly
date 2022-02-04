@@ -10,7 +10,7 @@ export default class Header extends Component {
     {/* Left navbar links */}
     <ul className="navbar-nav">
       <li className="nav-item">
-        <a className="nav-link" data-widget="pushmenu" href="/"><i className="fas fa-bars" /></a>
+        <span className="nav-link" data-widget="pushmenu" ><i className="fas fa-bars" /></span>
       </li>
       <li className="nav-item d-none d-sm-inline-block">
         <Link to="/" className="nav-link">Home</Link>
@@ -49,11 +49,11 @@ export default class Header extends Component {
         <i className="far fa-hand-pointer mr-1"></i>SELL</Link>
       </li>
       {/* Messages Dropdown Menu */}
-      <li className="nav-item dropdown">
-        <Link className="nav-link" data-toggle="dropdown" aria-expanded="false">
+      <li className="nav-item dropdown pointer">
+        <span className="nav-link" data-toggle="dropdown" aria-expanded="false">
           <i className="far fa-comments" />
-          <span className="badge badge-danger navbar-badge">3</span>
-        </Link>
+          <span className="badge badge-danger navbar-badge text-white bold">3</span>
+        </span>
         <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <a href="/" className="dropdown-item">
             {/* Message Start */}

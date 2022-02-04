@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import ProductDetailsCompo from '../../components/user/product/ProductDetailsCompo';
 import user from '../../services/userServices';
+import HashLoader from "react-spinners/HashLoader";
+import Header from '../../components/user/header/Header';
+import Menu from '../../components/user/sidebar/Menu';
+
 
 class ProductDetails extends Component {
     constructor(props){
@@ -35,13 +39,19 @@ class ProductDetails extends Component {
     }
     render() {
         return (
-            this.state.loaded?
+            
             <>
+                <Header/>
+                <Menu/>
             <div className='content-wrapper'>
-                <ProductDetailsCompo info = {this.state.info[0]}/>
+            {this.state.loaded?<ProductDetailsCompo info = {this.state.info[0]}/>:
+                <div className='d-flex justify-content-center align-center' style={{height:'70vh'}}>
+                    <HashLoader color={"#222"} loading={!this.state.loaded} size={100} />
+                </div>
+            }
             </div>
             </>
-            :"Loding..."
+            
         )
     }
 }

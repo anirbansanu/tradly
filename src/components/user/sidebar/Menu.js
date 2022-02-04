@@ -30,38 +30,10 @@ export default class Menu extends Component {
                   <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     {/* Add icons to the links using the .nav-icon class
                     with font-awesome or any other icon font library */}
-                    <li className="nav-item has-treeview menu-open">
-                      <a href="/" className="nav-link active">
-                        <i className="nav-icon fas fa-tachometer-alt" />
-                        <p>
-                          Dashboard
-                          <i className="right fas fa-angle-left" />
-                        </p>
-                      </a>
-                      <ul className="nav nav-treeview">
-                        <li className="nav-item">
-                          <a href="./index.html" className="nav-link active">
-                            <i className="far fa-circle nav-icon" />
-                            <p>Dashboard v1</p>
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="./index2.html" className="nav-link">
-                            <i className="far fa-circle nav-icon" />
-                            <p>Dashboard v2</p>
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a href="./index3.html" className="nav-link">
-                            <i className="far fa-circle nav-icon" />
-                            <p>Dashboard v3</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
+                    
                     <li className="nav-item">
                       <Link to="/" className="nav-link">
-                        <i className="nav-icon fas fa-th" />
+                        <i className="nav-icon fas fa-home" />
                         <p>
                           Home
                           <span className="right badge badge-danger">New</span>
@@ -70,28 +42,28 @@ export default class Menu extends Component {
                     </li>
                     <li className="nav-item">
                       <Link to="/sell" className="nav-link">
-                        <i className="nav-icon fas fa-th" />
+                        <i className="nav-icon fas fa-plus-square" />
                         <p>
                           Sell
-                          <span className="right badge badge-danger">New</span>
+                          {/* <span className="right badge badge-danger">New</span> */}
                         </p>
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link to="/myadds" className="nav-link">
-                        <i className="nav-icon fas fa-th" />
+                        <i className="nav-icon fas fa-th-list" />
                         <p>
                           My Adds
-                          <span className="right badge badge-danger">New</span>
+                          {/* <span className="right badge badge-danger">New</span> */}
                         </p>
                       </Link>
                     </li>
                     <li className="nav-item">
                       <Link to="/queries" className="nav-link">
-                        <i className="nav-icon fas fa-th" />
+                        <i className="nav-icon fas fa-comments" />
                         <p>
                           Queries
-                          <span className="right badge badge-danger">New</span>
+                          {/* <span className="right badge badge-danger">New</span> */}
                         </p>
                       </Link>
                     </li>
